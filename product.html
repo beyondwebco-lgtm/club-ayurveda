@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shata Dhauta Ghrita Moisturizer | Club Ayurveda</title>
+  <meta name="description" content="100 Times Washed Ghee Moisturizer crafted in copper vessels for deep hydration, skin barrier repair, and Pitta-soothing radiance by Club Ayurveda.">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <span>🌿 Classical Ayurvedic Care & Consultation by Dr. Sayali M. Deshmukh</span>
+    <span class="desktop-only">•</span>
+    <span>Complimentary Shipping on Shata Dhauta Ghrita</span>
+  </div>
+
+  <!-- Main Luxury Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Club Ayurveda Home">
+        <img src="assets/images/logo.jpg" alt="Club Aayurveda - Dr. Sayali Deshmukh" class="header-logo-img">
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="treatments.html" class="nav-link">Treatments</a>
+        <div class="nav-item-dropdown">
+          <a href="product.html" class="nav-link nav-link-dropdown-trigger active">
+            Products <span class="nav-dropdown-chevron">▼</span>
+          </a>
+          <div class="dropdown-menu">
+            <a href="product.html" class="dropdown-item">
+              <img src="assets/images/product-clean.jpg" alt="Shata Dhauta Ghrita" class="dropdown-item-thumb">
+              <div class="dropdown-item-info">
+                <span class="dropdown-item-title">Shata Dhauta Ghrita</span>
+                <span class="dropdown-item-desc">100x Washed Copper Ghee Moisturizer</span>
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="product.html" class="dropdown-item" style="padding: 0.5rem 0.85rem; font-size: 0.8rem; color: var(--color-gold-dark); font-weight: 600;">
+              ✨ View All Formulations &rarr;
+            </a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn btn-outline-gold btn-sm consultation-modal-trigger">
+          Book Consultation
+        </button>
+
+        <button type="button" class="btn btn-primary btn-sm" onclick="window.ClubAyurveda.addToCart(1)">
+          Shop Now
+        </button>
+
+        <button type="button" class="cart-toggle-btn" aria-label="View Shopping Bag">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-count-badge">1</span>
+        </button>
+
+        <button type="button" class="mobile-menu-toggle" aria-label="Open Mobile Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Product Breadcrumb -->
+  <div style="background: var(--color-bg-secondary); padding: 0.85rem 0; font-size: 0.82rem; border-bottom: 1px solid rgba(0,0,0,0.05);">
+    <div class="container" style="color: var(--color-text-muted);">
+      <a href="index.html">Home</a> &nbsp;/&nbsp; 
+      <a href="product.html">Botanical Skincare</a> &nbsp;/&nbsp; 
+      <span style="color: var(--color-text-main); font-weight: 600;">Shata Dhauta Ghrita</span>
+    </div>
+  </div>
+
+  <!-- Product Section Main -->
+  <section class="section" style="padding-top: 3.5rem;">
+    <div class="container">
+      <div class="product-hero-grid">
+        
+        <!-- 5-Image Gallery Left Column -->
+        <div class="product-gallery-container">
+          <div class="main-gallery-view">
+            <img src="assets/images/product-clean.jpg" id="mainGalleryImage" alt="Club Ayurveda Shata Dhauta Ghrita Main Front View">
+          </div>
+          
+          <div class="gallery-thumbnails-row">
+            <button type="button" class="thumbnail-btn active" data-img-src="assets/images/product-clean.jpg" aria-label="Front Clean View">
+              <img src="assets/images/product-clean.jpg" alt="Front Studio View">
+            </button>
+            <button type="button" class="thumbnail-btn" data-img-src="assets/images/product-luxury.jpg" aria-label="Luxury Marble Shot">
+              <img src="assets/images/product-luxury.jpg" alt="Luxury Marble Studio">
+            </button>
+            <button type="button" class="thumbnail-btn" data-img-src="assets/images/product-texture.jpg" aria-label="Open Jar Cream Texture">
+              <img src="assets/images/product-texture.jpg" alt="Open Texture Shot">
+            </button>
+            <button type="button" class="thumbnail-btn" data-img-src="assets/images/product-editorial.jpg" aria-label="Stone Pedestal Shot">
+              <img src="assets/images/product-editorial.jpg" alt="Stone Pedestal Editorial">
+            </button>
+            <button type="button" class="thumbnail-btn" data-img-src="assets/images/product-ayurveda.jpg" aria-label="Natural Ayurveda Setting">
+              <img src="assets/images/product-ayurveda.jpg" alt="Natural Setting Shot">
+            </button>
+          </div>
+
+          <div style="font-size: 0.78rem; text-align: center; color: var(--color-text-light); margin-top: 0.5rem;">
+            Click thumbnails to preview genuine product photography & textures
+          </div>
+        </div>
+
+        <!-- Product Purchase Box Right Column -->
+        <div class="product-info-box">
+          <div class="badge badge-gold" style="align-self: flex-start; margin-bottom: 0.75rem;">
+            Signature Ayurvedic Formulation
+          </div>
+          
+          <h1>SHATA DHAUTA GHRITA</h1>
+          <div class="product-tagline">100 Times Washed Ghee Moisturizer</div>
+
+          <div class="product-meta-strip">
+            <div class="meta-rating">
+              <span class="stars">★★★★★</span>
+              <span>4.9 / 5.0 (Client Demo Rating)</span>
+            </div>
+            <div class="product-stock-badge">In Stock &bull; Fresh Artisanal Batch</div>
+          </div>
+
+          <div class="product-price-section">
+            <span class="selling-price" style="font-size: 2.2rem;">₹999</span>
+            <span class="mrp-price" style="font-size: 1.3rem;">₹1,299 MRP</span>
+            <span class="discount-badge">Save 23%</span>
+          </div>
+
+          <p style="color: var(--color-text-muted); font-size: 1rem; line-height: 1.65; margin-bottom: 1.5rem;">
+            A legendary classical Ayurvedic formulation described in ancient Samhitas. Pure organic clarified butter is washed 100 times in consecrated copper vessels with pure water. This transformative process breaks down fat molecules into a micro-emulsion that penetrates all seven layers of the skin (Sapta Dhatu) without greasiness.
+          </p>
+
+          <div style="background: var(--color-bg-secondary); padding: 1rem 1.25rem; border-radius: var(--radius-sm); margin-bottom: 1.75rem; font-size: 0.88rem; display: flex; gap: 2rem;">
+            <div><strong>Net Content:</strong> 50g / 1.76 oz</div>
+            <div><strong>Formulation:</strong> 100x Washed Copper Ghee</div>
+            <div><strong>Skin Type:</strong> All / Sensitive / Pitta-prone</div>
+          </div>
+
+          <!-- Quantity & Purchase Actions -->
+          <div class="product-buy-actions">
+            <div class="action-row-main">
+              <div class="quantity-picker">
+                <button type="button" class="qty-btn" id="qtyDecreaseBtn" aria-label="Decrease quantity">-</button>
+                <input type="text" class="qty-input" id="productQtyInput" value="1" readonly>
+                <button type="button" class="qty-btn" id="qtyIncreaseBtn" aria-label="Increase quantity">+</button>
+              </div>
+
+              <button type="button" class="btn btn-primary" id="productAddToCartBtn" style="flex-grow: 1;">
+                Add to Cart
+              </button>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+              <button type="button" class="btn btn-dark" id="productBuyNowBtn">
+                ⚡ Instant Buy Now
+              </button>
+              <a href="https://wa.me/919876543210?text=Hello%20Club%20Ayurveda%2C%20I%20have%20a%20question%20regarding%20Shata%20Dhauta%20Ghrita" target="_blank" class="btn btn-whatsapp">
+                💬 WhatsApp Enquiry
+              </a>
+            </div>
+          </div>
+
+          <!-- Trust Icons Strip -->
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; padding: 1.25rem 0; border-top: 1px solid rgba(0,0,0,0.08); border-bottom: 1px solid rgba(0,0,0,0.08); margin-bottom: 2rem;">
+            <div style="text-align: center;">
+              <div style="font-size: 1.2rem; margin-bottom: 0.25rem;">✨</div>
+              <div style="font-size: 0.75rem; font-weight: 600;">Pure Copper Washed</div>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-size: 1.2rem; margin-bottom: 0.25rem;">🌱</div>
+              <div style="font-size: 0.75rem; font-weight: 600;">Zero Chemical Additives</div>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-size: 1.2rem; margin-bottom: 0.25rem;">🩺</div>
+              <div style="font-size: 0.75rem; font-weight: 600;">Doctor Formulated</div>
+            </div>
+          </div>
+
+          <!-- In-Depth Accordions -->
+          <div class="product-accordions">
+            
+            <!-- 1. What is Shata Dhauta Ghrita -->
+            <div class="accordion-item">
+              <button type="button" class="accordion-header">
+                <span>What is Shata Dhauta Ghrita?</span>
+                <span class="accordion-icon">+</span>
+              </button>
+              <div class="accordion-body">
+                <div class="accordion-body-inner">
+                  "Shata" means 100, "Dhauta" means washed, and "Ghrita" refers to pure clarified butter. In classical Ayurvedic rasashastra, this revered therapeutic moisturizer is meticulously whipped and washed 100 consecutive times in copper vessels. Copper infuses trace restorative minerals while the repeated washing eliminates heavy oily odor, resulting in a cooling, velvety, luxurious cream that melts effortlessly into the dermis.
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Proven Benefits -->
+            <div class="accordion-item">
+              <button type="button" class="accordion-header">
+                <span>Key Ritual Benefits</span>
+                <span class="accordion-icon">+</span>
+              </button>
+              <div class="accordion-body">
+                <div class="accordion-body-inner">
+                  <ul style="list-style: disc; padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                    <li><strong>Skin Barrier Repair:</strong> Rich in essential fatty acids (Omega 3 & 9) to reinforce the lipid barrier.</li>
+                    <li><strong>Pitta Pacifying & Cooling:</strong> Instantly calms redness, skin irritation, sunburn, and rosacea flare-ups.</li>
+                    <li><strong>Deep Cellular Hydration:</strong> Micro-emulsified ghee molecules penetrate deep tissue without clogging pores.</li>
+                    <li><strong>Natural Glow:</strong> Promotes cellular renewal and smooths fine texture for a radiant Vedic glow.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. How to Use -->
+            <div class="accordion-item">
+              <button type="button" class="accordion-header">
+                <span>How to Use / Daily Ritual</span>
+                <span class="accordion-icon">+</span>
+              </button>
+              <div class="accordion-body">
+                <div class="accordion-body-inner">
+                  1. Cleanse face with lukewarm water or a gentle botanical cleanser.<br>
+                  2. Mist face lightly with pure rose water or herbal hydrosol (Shata Dhauta Ghrita binds wonderfully with moisture).<br>
+                  3. Scoop a pea-sized amount using the clean golden applicator spoon.<br>
+                  4. Gently warm between fingertips and press onto face and neck in upward circular strokes until fully absorbed.<br>
+                  5. Recommended as a nightly restorative cream or as a targeted barrier treatment for dry zones.
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Ingredients & Purity -->
+            <div class="accordion-item">
+              <button type="button" class="accordion-header">
+                <span>Ingredients & Purity Promise</span>
+                <span class="accordion-icon">+</span>
+              </button>
+              <div class="accordion-body">
+                <div class="accordion-body-inner">
+                  <strong>Full Ingredients:</strong> Pure Clarified Cow Ghee (Ghrita), Purified Water (Jala), trace elemental copper micro-particles from traditional copper vessel washing.<br><br>
+                  <em>100% Free from synthetic preservatives, parabens, sulfates, artificial fragrances, silicones, and petroleum derivatives.</em>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Patch Test, Storage & Safety -->
+            <div class="accordion-item">
+              <button type="button" class="accordion-header">
+                <span>Patch Test, Storage & Warnings</span>
+                <span class="accordion-icon">+</span>
+              </button>
+              <div class="accordion-body">
+                <div class="accordion-body-inner">
+                  <strong>Patch Test:</strong> As with any natural botanical formulation, apply a small dab behind the ear or inner wrist for 24 hours prior to initial use.<br>
+                  <strong>Storage:</strong> Store in a cool, dry place away from direct sunlight. Do not allow water to enter the jar. Always use a dry spatula/spoon.<br>
+                  <strong>Warnings:</strong> For external cosmetic use only. Keep out of reach of children. Discontinue use if irritation develops.
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. Batch & Shipping Information -->
+            <div class="accordion-item">
+              <button type="button" class="accordion-header">
+                <span>Packaging, Dispatch & Compliance</span>
+                <span class="accordion-icon">+</span>
+              </button>
+              <div class="accordion-body">
+                <div class="accordion-body-inner">
+                  <strong>Marketed & Formulated By:</strong> Club Ayurveda &bull; Dr. Sayali M. Deshmukh<br>
+                  <strong>Batch & Manufacturing:</strong> Artisanal Small Batch (Detailed batch number, expiry date, and AYUSH licensing to be printed on finalized production carton).<br>
+                  <strong>Shipping:</strong> Dispatched across India within 24–48 hours via premium express couriers.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Reviews Placeholder Section -->
+  <section class="section section-secondary">
+    <div class="container">
+      <div class="section-heading-wrap text-center">
+        <div class="eyebrow with-lines">Client Feedback</div>
+        <h2>Verified Reviews & Experiences</h2>
+        <p class="subheading">Read how our wellness members experience the nourishing touch of Shata Dhauta Ghrita.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div>
+            <div class="star-rating">★★★★★</div>
+            <div class="testimonial-text">
+              &ldquo;I was skeptical about applying ghee on my combination skin, but Shata Dhauta Ghrita is a marvel. It is not oily at all — it sinks in like whipped silk and eliminated my flakiness in days.&rdquo;
+            </div>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">SM</div>
+            <div class="author-info">
+              <h5>Shruti Mukherjee</h5>
+              <span>Verified Buyer &bull; New Delhi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div>
+            <div class="star-rating">★★★★★</div>
+            <div class="testimonial-text">
+              &ldquo;My sensitive cheeks flare up with chemical moisturizers. This pure formulation calmed my redness overnight. The packaging and golden spoon make it a regal daily ritual.&rdquo;
+            </div>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">TN</div>
+            <div class="author-info">
+              <h5>Tanvi Naik</h5>
+              <span>Verified Buyer &bull; Pune</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div>
+            <div class="star-rating">★★★★★</div>
+            <div class="testimonial-text">
+              &ldquo;The doctor’s guidance combined with this cream has restored my skin barrier. Authentic Ayurveda done with modern elegance!&rdquo;
+            </div>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">KV</div>
+            <div class="author-info">
+              <h5>Kavita Verma</h5>
+              <span>Verified Buyer &bull; Bengaluru</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="footer-logo-wrap">
+              <img src="assets/images/logo.jpg" alt="Club Aayurveda - Dr. Sayali Deshmukh" class="footer-logo-img">
+            </div>
+          </a>
+          <p>
+            Personalised Ayurvedic care, clinical cosmetology, and authentic botanical formulations guided by Dr. Sayali M. Deshmukh.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="treatments.html">Treatments</a>
+            <a href="product.html">Shata Dhauta Ghrita</a>
+            <a href="about.html">About Dr. Sayali</a>
+            <a href="contact.html">Contact & Appointments</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Clinical Focus</h4>
+          <div class="footer-links">
+            <a href="treatments.html#skin-hair">Skin & Hair Care</a>
+            <a href="treatments.html#digestive">Digestive Wellness</a>
+            <a href="treatments.html#liver-kidney">Liver & Kidney Support</a>
+            <a href="treatments.html#weight-diet">Diet & Weight Management</a>
+            <a href="treatments.html#pcod-pcos">PCOD & PCOS Care</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Consultation Suite</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>+91 98765 43210 (Enquiry Line)</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>care@clubayurveda.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Club Ayurveda Clinic &bull; Pune / Mumbai, Maharashtra</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Club Ayurveda. All rights reserved. Version 1 Client Demo.</div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Shipping & Returns</a>
+          <a href="#">Medical Disclaimer</a>
+        </div>
+      </div>
+      <div class="footer-medical-note">
+        Disclaimer: Content on this website is for educational and wellness consultation scheduling purposes and is not a substitute for formal diagnostic medical advice. Dr. Sayali M. Deshmukh practices individualized Ayurvedic medicine.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-out Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <h3>Your Shopping Bag</h3>
+        <button type="button" class="cart-close-btn" id="cartCloseBtn">&times;</button>
+      </div>
+      <div class="cart-body" id="cartItemsList"></div>
+      <div class="cart-footer">
+        <div class="cart-subtotal-row">
+          <span>Subtotal</span>
+          <span class="cart-subtotal-price" id="cartSubtotalPrice">₹999</span>
+        </div>
+        <button type="button" class="btn btn-primary" style="width: 100%; margin-bottom: 0.75rem;" id="cartCheckoutBtn">
+          Proceed to Order (WhatsApp Concierge)
+        </button>
+        <p style="font-size: 0.75rem; text-align: center; color: var(--color-text-light);">
+          Free nationwide shipping &bull; 100% Authentic Preparation
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Consultation Booking Modal -->
+  <div class="modal-overlay" id="consultationModalOverlay">
+    <div class="modal-content">
+      <button type="button" class="modal-close-btn" id="consultModalCloseBtn">&times;</button>
+      <div class="eyebrow">Personalised Care</div>
+      <h3 style="margin-bottom: 0.5rem;">Book a Consultation with Dr. Sayali</h3>
+      <p style="font-size: 0.92rem; margin-bottom: 1.5rem;">
+        Fill in your details and primary health concerns to reserve your in-clinic or video consultation.
+      </p>
+
+      <form class="consultation-booking-form">
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label">Full Name <span class="required">*</span></label>
+            <input type="text" name="fullName" class="form-input" placeholder="e.g. Priyadarshini Rao" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Mobile Number <span class="required">*</span></label>
+            <input type="tel" name="phone" class="form-input" placeholder="+91 98765 00000" required>
+          </div>
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" name="email" class="form-input" placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label">City</label>
+            <input type="text" name="city" class="form-input" placeholder="e.g. Pune, Mumbai">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Consultation Mode <span class="required">*</span></label>
+          <div class="concern-pills-group">
+            <label class="concern-pill-label">
+              <input type="radio" name="consultMode" value="Online Video Consultation" checked>
+              <span class="pill-box">Online Video Call</span>
+            </label>
+            <label class="concern-pill-label">
+              <input type="radio" name="consultMode" value="In-Clinic Visit">
+              <span class="pill-box">In-Clinic Visit</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Primary Concern <span class="required">*</span></label>
+          <div class="concern-pills-group">
+            <label class="concern-pill-label">
+              <input type="radio" name="concern" value="Skin & Hair Care" checked>
+              <span class="pill-box">Skin & Hair</span>
+            </label>
+            <label class="concern-pill-label">
+              <input type="radio" name="concern" value="Digestive Disorders">
+              <span class="pill-box">Digestive Wellness</span>
+            </label>
+            <label class="concern-pill-label">
+              <input type="radio" name="concern" value="PCOD & PCOS">
+              <span class="pill-box">PCOD / PCOS</span>
+            </label>
+            <label class="concern-pill-label">
+              <input type="radio" name="concern" value="Weight Management & Diet">
+              <span class="pill-box">Weight & Diet</span>
+            </label>
+            <label class="concern-pill-label">
+              <input type="radio" name="concern" value="Liver & Kidney Support">
+              <span class="pill-box">Liver / Kidney</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Preferred Date / Time</label>
+          <input type="date" name="prefDate" class="form-input">
+        </div>
+
+        <div class="checkbox-consent">
+          <input type="checkbox" id="consentCheckModalProd" required checked>
+          <label for="consentCheckModalProd">
+            I consent to Club Ayurveda contacting me via WhatsApp/Phone for appointment coordination.
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+          Submit Request & Connect via WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating Actions -->
+  <div class="floating-actions">
+    <a href="https://wa.me/919876543210?text=Hello%20Club%20Ayurveda%2C%20I%20would%20like%20to%20enquire%20about%20Shata%20Dhauta%20Ghrita" target="_blank" class="floating-btn floating-whatsapp" aria-label="Chat on WhatsApp">
+      <span>💬 WhatsApp Us</span>
+    </a>
+  </div>
+
+  <!-- JS -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/product-gallery.js"></script>
+  <script src="assets/js/consultation.js"></script>
+</body>
+</html>

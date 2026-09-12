@@ -1,0 +1,84 @@
+# Club Ayurveda — Luxury Client Demo (Version 1)
+
+A luxury, editorial-grade modern Ayurvedic wellness client demo website created for **CLUB AYURVEDA** featuring lead physician **Dr. Sayali M. Deshmukh** (BAMS, PGDCC) and signature formulation **Shata Dhauta Ghrita**.
+
+---
+
+## 🌿 Brand & Visual Direction
+
+- **Brand Archetype:** Luxury Skincare + Premium Ayurvedic Clinic + Modern Editorial Wellness
+- **Palette:** Warm Ivory (`#FAF8F5`, `#F3EFEA`), Deep Charcoal (`#1D2320`), Restrained Gold Accents (`#C5A059`, `#D8B268`), and Botanical Green with subtle lime leaf touches (`#789938`).
+- **Typography:** Editorial Serif (*Cormorant Garamond*) + Modern Geometric Sans (*Plus Jakarta Sans*).
+- **Core Product:** **Shata Dhauta Ghrita** (100 times washed pure ghee moisturizer prepared in copper vessels).
+
+---
+
+## 🏛️ Website Pages (Version 1 Demo)
+
+1. **Home (`index.html`)**
+   - High-impact luxury hero section with genuine product campaign photography.
+   - Dual primary/secondary conversion paths (*Shop Shata Dhauta Ghrita* & *Book Consultation*).
+   - Brand philosophy: *"A more personalised approach to Ayurveda"*.
+   - Doctor introduction card featuring **Dr. Sayali M. Deshmukh** (BAMS, PGDCC, Cosmetology, Panchakarma).
+   - 5 Interactive Clinical Treatment Area Cards.
+   - Featured Product spotlight with key benefits and fast cart trigger.
+   - 4 Pillars of Club Ayurveda & Verified Client Testimonials.
+
+2. **Treatments (`treatments.html`)**
+   - 5 anchored editorial sections with large visual media, common concerns, and doctor-guided approach:
+     1. Skin & Hair Care
+     2. Digestive Disorders & Agni Balance
+     3. Liver & Kidney Related Support (with medical coordination notice)
+     4. Diet & Weight Management
+     5. PCOD & PCOS Consultation
+   - Context-aware consultation booking modal triggers that auto-select the chosen concern.
+
+3. **Shata Dhauta Ghrita (`product.html`)**
+   - 5-angle interactive product photography gallery (Clean Front Studio, Luxury Lighting, Open Texture with Gold Spoon, Stone Pedestal Editorial, Natural Ayurvedic Setting).
+   - Dynamic price, MRP, stock status badge, and quantity selector.
+   - **Add to Cart**, **Instant Buy Now**, and **WhatsApp Enquiry** buttons.
+   - In-depth interactive accordions covering:
+     - What is Shata Dhauta Ghrita? (100x copper wash process)
+     - Key Ritual Benefits & Pitta-soothing action
+     - How to Use / Evening Skincare Ritual
+     - Pure Ingredients (Ghee, Purified Water, Copper trace elements)
+     - Patch Test, Storage & Warnings
+     - Artisanal Batch & Shipping info
+   - Verified Client Reviews section.
+
+4. **About Dr. Sayali & Club Ayurveda (`about.html`)**
+   - Editorial profile of Dr. Sayali M. Deshmukh.
+   - Comprehensive qualifications & clinical background breakdown.
+   - The 4-Step Consultation Journey (History, Prakriti Assessment, Tailored Plan, Guided Follow-Up).
+   - Heritage & purity standards.
+
+5. **Contact & Consultation (`contact.html`)**
+   - Full appointment reservation form with name, contact, city, mode selector (Online Video vs In-Clinic), primary concern selector, preferred date, and consent checkbox.
+   - Direct WhatsApp Concierge and click-to-call links.
+   - Clinic hours, address placeholders, and transparent emergency medical disclaimer.
+
+---
+
+## 🛒 Interactive Demo Features
+
+- **Slide-out Shopping Bag Drawer:** Add items, modify quantities, view subtotal, and proceed to WhatsApp order concierge.
+- **Quick Consultation Modal:** Easily triggered from anywhere across all 5 pages.
+- **Interactive Product Gallery:** Instant thumbnail switching with smooth opacity transitions.
+- **WhatsApp Direct Integration:** Automatically formats consultation and purchase requests with pre-filled details.
+- **Responsive Navigation:** Clean mobile drawer menu and sticky header with backdrop blur.
+
+---
+
+## 🚀 How to Run Locally
+
+You can open any of the HTML files directly in your web browser, or launch a lightweight local HTTP server:
+
+```bash
+# Using npx serve
+npx serve -l 8080 .
+
+# Or using Python
+python -m http.server 8080
+```
+
+Then visit: [http://localhost:8080](http://localhost:8080)
