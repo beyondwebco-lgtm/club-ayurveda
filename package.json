@@ -4,6 +4,7 @@
   "description": "Club Ayurveda - Luxury Ayurvedic Wellness Client Demo Website",
   "main": "index.html",
   "scripts": {
+    "build": "echo 'Build complete'",
     "dev": "npx serve -l 3000 .",
     "start": "npx serve -l 3000 .",
     "serve": "npx serve ."

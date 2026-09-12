@@ -74,11 +74,32 @@ A luxury, editorial-grade modern Ayurvedic wellness client demo website created 
 You can open any of the HTML files directly in your web browser, or launch a lightweight local HTTP server:
 
 ```bash
-# Using npx serve
-npx serve -l 8080 .
-
-# Or using Python
-python -m http.server 8080
+# Start local dev server
+npm run dev
 ```
 
-Then visit: [http://localhost:8080](http://localhost:8080)
+Then visit: [http://localhost:3000](http://localhost:3000)
+
+---
+
+## ⚡ Hosting on Vercel
+
+The project is fully pre-configured for one-click deployment on **Vercel**:
+
+### Option 1: Deploy via GitHub (Recommended)
+1. Push your repository to GitHub:
+   ```bash
+   git add .
+   git commit -m "Deploy Club Ayurveda luxury demo to Vercel"
+   git push origin main
+   ```
+2. Go to [vercel.com/new](https://vercel.com/new).
+3. Import the `club-ayurveda` repository.
+4. Click **Deploy**. Vercel will automatically deploy the static demo with fast Edge CDN caching and clean URLs configured in `vercel.json`.
+
+### Option 2: Deploy via Vercel CLI
+```bash
+npx vercel
+```
+Follow the interactive prompts to deploy directly from your local terminal.
+
