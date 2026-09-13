@@ -1,5 +1,5 @@
 /* ==========================================================================
-   CLUB AYURVEDA - Components CSS
+   CLUB AAYURVEDA - Components CSS
    ========================================================================== */
 
 /* Top Announcement Bar */
@@ -47,7 +47,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  height: 160px;
   gap: 1.5rem;
 }
 
@@ -57,29 +57,33 @@
   align-items: center;
   text-decoration: none;
   line-height: 1;
+  padding: 2px 0;
+  transition: all var(--transition-fast);
 }
 
 .header-logo-img {
-  height: 52px;
+  height: 150px;
   width: auto;
-  max-width: 170px;
+  max-width: 480px;
   object-fit: contain;
   display: block;
   mix-blend-mode: multiply;
+  filter: contrast(1.25) brightness(1.06);
   transition: transform var(--transition-fast);
 }
 
 .brand-logo:hover .header-logo-img {
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
 .footer-logo-wrap {
   display: inline-block;
   background: #FFFFFF;
-  padding: 6px 14px;
+  padding: 8px 18px;
   border-radius: var(--radius-sm);
   margin-bottom: 0.75rem;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.22);
+  border: 1px solid var(--color-gold-border);
   transition: transform var(--transition-fast);
 }
 
@@ -364,6 +368,27 @@
   background-color: #1EBE5D;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+}
+
+/* High-Contrast Prominent "Book Consultation" CTAs */
+.btn-consultation,
+.consultation-modal-trigger {
+  background: var(--color-olive-deep) !important;
+  color: #F4E7C5 !important;
+  border: 1.5px solid var(--color-gold-primary) !important;
+  box-shadow: 0 4px 18px rgba(30, 53, 43, 0.35) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+  transition: all var(--transition-normal) !important;
+}
+
+.btn-consultation:hover,
+.consultation-modal-trigger:hover {
+  background: var(--color-gold-gradient) !important;
+  color: #FFFFFF !important;
+  border-color: transparent !important;
+  box-shadow: 0 8px 25px rgba(169, 121, 36, 0.5) !important;
+  transform: translateY(-2px) scale(1.03) !important;
 }
 
 .btn-sm {

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   CLUB AYURVEDA - Product Page Gallery & Interactive Details
+   CLUB AAYURVEDA - Product Page Gallery & Interactive Details
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -52,8 +52,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (addToCartBtn) {
     addToCartBtn.addEventListener('click', () => {
       const qty = parseInt(productQtyInput ? productQtyInput.value : 1, 10) || 1;
-      if (window.ClubAyurveda && window.ClubAyurveda.addToCart) {
-        window.ClubAyurveda.addToCart(qty);
+      const app = window.ClubAayurveda || window.ClubAyurveda;
+      if (app && app.addToCart) {
+        app.addToCart(qty);
       }
     });
   }
@@ -63,11 +64,11 @@ document.addEventListener('DOMContentLoaded', () => {
   if (buyNowBtn) {
     buyNowBtn.addEventListener('click', () => {
       const qty = parseInt(productQtyInput ? productQtyInput.value : 1, 10) || 1;
-      const subtotal = 999 * qty;
+      const subtotal = 699 * qty;
       const whatsappMsg = encodeURIComponent(
-        `Hello Dr. Sayali & Club Ayurveda, I would like to instantly order ${qty} jar(s) of Shata Dhauta Ghrita (Total: ₹${subtotal}). Please share checkout link.`
+        `Hello Dr. Sayali & Club Aayurveda, I would like to instantly order ${qty} jar(s) of Shata Dhauta Ghrita (Total: ₹${subtotal}). Please share checkout details.`
       );
-      window.open(`https://wa.me/919876543210?text=${whatsappMsg}`, '_blank');
+      window.open(`https://wa.me/919324635177?text=${whatsappMsg}`, '_blank');
     });
   }
 

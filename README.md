@@ -1,28 +1,28 @@
-# Club Ayurveda — Luxury Client Demo (Version 1)
+# Club Aayurveda — Official Website
 
-A luxury, editorial-grade modern Ayurvedic wellness client demo website created for **CLUB AYURVEDA** featuring lead physician **Dr. Sayali M. Deshmukh** (BAMS, PGDCC) and signature formulation **Shata Dhauta Ghrita**.
+A luxury, editorial-grade modern Ayurvedic wellness website created for **CLUB AAYURVEDA** featuring lead physician **Dr. Sayali M. Deshmukh** (BAMS, PGDCC, Ayurvedic Physician, Clinical Cosmetologist, Skin & Hair Specialist) and signature formulation **Shata Dhauta Ghrita**.
 
 ---
 
 ## 🌿 Brand & Visual Direction
 
-- **Brand Archetype:** Luxury Skincare + Premium Ayurvedic Clinic + Modern Editorial Wellness
+- **Brand Name:** Club Aayurveda
 - **Palette:** Warm Ivory (`#FAF8F5`, `#F3EFEA`), Deep Charcoal (`#1D2320`), Restrained Gold Accents (`#C5A059`, `#D8B268`), and Botanical Green with subtle lime leaf touches (`#789938`).
 - **Typography:** Editorial Serif (*Cormorant Garamond*) + Modern Geometric Sans (*Plus Jakarta Sans*).
-- **Core Product:** **Shata Dhauta Ghrita** (100 times washed pure ghee moisturizer prepared in copper vessels).
+- **Core Product:** **Shata Dhauta Ghrita** (100 times washed pure ghee moisturizer prepared in copper vessels, 30 g, ₹699).
 
 ---
 
-## 🏛️ Website Pages (Version 1 Demo)
+## 🏛️ Website Pages
 
 1. **Home (`index.html`)**
    - High-impact luxury hero section with genuine product campaign photography.
    - Dual primary/secondary conversion paths (*Shop Shata Dhauta Ghrita* & *Book Consultation*).
    - Brand philosophy: *"A more personalised approach to Ayurveda"*.
-   - Doctor introduction card featuring **Dr. Sayali M. Deshmukh** (BAMS, PGDCC, Cosmetology, Panchakarma).
+   - Doctor introduction card featuring **Dr. Sayali M. Deshmukh** (BAMS, PGDCC, Ayurvedic Physician, Clinical Cosmetologist, Skin & Hair Specialist).
    - 5 Interactive Clinical Treatment Area Cards.
    - Featured Product spotlight with key benefits and fast cart trigger.
-   - 4 Pillars of Club Ayurveda & Verified Client Testimonials.
+   - 4 Pillars of Club Aayurveda & Verified Client Testimonials.
 
 2. **Treatments (`treatments.html`)**
    - 5 anchored editorial sections with large visual media, common concerns, and doctor-guided approach:
@@ -34,8 +34,8 @@ A luxury, editorial-grade modern Ayurvedic wellness client demo website created 
    - Context-aware consultation booking modal triggers that auto-select the chosen concern.
 
 3. **Shata Dhauta Ghrita (`product.html`)**
-   - 5-angle interactive product photography gallery (Clean Front Studio, Luxury Lighting, Open Texture with Gold Spoon, Stone Pedestal Editorial, Natural Ayurvedic Setting).
-   - Dynamic price, MRP, stock status badge, and quantity selector.
+   - 5-angle interactive product photography gallery.
+   - Official product details (30 g, ₹699) and quantity selector.
    - **Add to Cart**, **Instant Buy Now**, and **WhatsApp Enquiry** buttons.
    - In-depth interactive accordions covering:
      - What is Shata Dhauta Ghrita? (100x copper wash process)
@@ -46,16 +46,15 @@ A luxury, editorial-grade modern Ayurvedic wellness client demo website created 
      - Artisanal Batch & Shipping info
    - Verified Client Reviews section.
 
-4. **About Dr. Sayali & Club Ayurveda (`about.html`)**
-   - Editorial profile of Dr. Sayali M. Deshmukh.
+4. **About Dr. Sayali & Club Aayurveda (`about.html`)**
+   - Editorial profile of Dr. Sayali M. Deshmukh with official bio text.
    - Comprehensive qualifications & clinical background breakdown.
    - The 4-Step Consultation Journey (History, Prakriti Assessment, Tailored Plan, Guided Follow-Up).
    - Heritage & purity standards.
 
 5. **Contact & Consultation (`contact.html`)**
-   - Full appointment reservation form with name, contact, city, mode selector (Online Video vs In-Clinic), primary concern selector, preferred date, and consent checkbox.
+   - Official details: Call & WhatsApp (+91 93246 35177), Haware Splendor, Sector 20, Kharghar, Navi Mumbai, Consultation Timings: 10:00 AM to 7:00 PM.
    - Direct WhatsApp Concierge and click-to-call links.
-   - Clinic hours, address placeholders, and transparent emergency medical disclaimer.
 
 ---
 
@@ -90,7 +89,7 @@ The project is fully pre-configured for one-click deployment on **Vercel**:
 1. Push your repository to GitHub:
    ```bash
    git add .
-   git commit -m "Deploy Club Ayurveda luxury demo to Vercel"
+   git commit -m "Deploy Club Aayurveda website to Vercel"
    git push origin main
    ```
 2. Go to [vercel.com/new](https://vercel.com/new).

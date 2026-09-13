@@ -1,17 +1,17 @@
 /* ==========================================================================
-   CLUB AYURVEDA - Cart Drawer & Commerce Logic
+   CLUB AAYURVEDA - Cart Drawer & Commerce Logic
    ========================================================================== */
 
 (function() {
   // Demo Product Info
   const PRODUCT_DATA = {
     id: 'shata-dhauta-ghrita',
-    name: 'Shata Dhauta Ghrita Moisturizer',
+    name: 'Shata Dhauta Ghrita',
     subtitle: '100 Times Washed Ghee Skincare Ritual',
-    price: 999,
-    mrp: 1299,
+    price: 699,
+    mrp: 699,
     image: 'assets/images/product-clean.jpg',
-    netQty: '50g / 1.76 oz'
+    netQty: '30 g'
   };
 
   // State
@@ -53,7 +53,7 @@
       cartItemsList.innerHTML = `
         <div class="cart-empty-state">
           <p style="font-size: 1.1rem; margin-bottom: 1rem;">Your bag is currently empty.</p>
-          <a href="product.html" class="btn btn-primary btn-sm" onclick="window.ClubAyurveda.closeCart()">Shop Shata Dhauta Ghrita</a>
+          <a href="product.html" class="btn btn-primary btn-sm" onclick="(window.ClubAayurveda || window.ClubAyurveda).closeCart()">Shop Shata Dhauta Ghrita</a>
         </div>
       `;
       if (cartCheckoutBtn) cartCheckoutBtn.disabled = true;
@@ -131,8 +131,9 @@
     }
     updateCartUI();
     openCart();
-    if (window.ClubAyurveda && window.ClubAyurveda.showToast) {
-      window.ClubAyurveda.showToast(`Added ${qty} item(s) to your bag`);
+    const app = window.ClubAayurveda || window.ClubAyurveda;
+    if (app && app.showToast) {
+      app.showToast(`Added ${qty} item(s) to your bag`);
     }
   }
 
@@ -151,18 +152,19 @@
       const totalCount = cart.items.reduce((sum, item) => sum + item.quantity, 0);
       
       const whatsappMsg = encodeURIComponent(
-        `Hello Club Ayurveda, I would like to order ${totalCount} unit(s) of Shata Dhauta Ghrita (Subtotal: ₹${subtotal}). Please confirm availability and payment details.`
+        `Hello Club Aayurveda, I would like to order ${totalCount} unit(s) of Shata Dhauta Ghrita (Subtotal: ₹${subtotal}). Please confirm availability and payment details.`
       );
-      window.open(`https://wa.me/919876543210?text=${whatsappMsg}`, '_blank');
+      window.open(`https://wa.me/919324635177?text=${whatsappMsg}`, '_blank');
       closeCart();
     });
   }
 
   // Expose methods to global scope
-  window.ClubAyurveda = window.ClubAyurveda || {};
-  window.ClubAyurveda.openCart = openCart;
-  window.ClubAyurveda.closeCart = closeCart;
-  window.ClubAyurveda.addToCart = addToCart;
+  window.ClubAayurveda = window.ClubAayurveda || {};
+  window.ClubAayurveda.openCart = openCart;
+  window.ClubAayurveda.closeCart = closeCart;
+  window.ClubAayurveda.addToCart = addToCart;
+  window.ClubAyurveda = window.ClubAayurveda;
 
   // Initial render
   document.addEventListener('DOMContentLoaded', updateCartUI);

@@ -1,11 +1,11 @@
 /* ==========================================================================
-   CLUB AYURVEDA - Base Design System & CSS Variables
+   CLUB AAYURVEDA - Base Design System & CSS Variables
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Exact Club Ayurveda Visual Palette */
+  /* Exact Club Aayurveda Visual Palette */
   --color-charcoal-deep: #151512;
   --color-olive-deep: #39452A;
   --color-green-botanical: #687B45;

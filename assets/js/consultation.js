@@ -1,5 +1,5 @@
 /* ==========================================================================
-   CLUB AYURVEDA - Consultation Modal & Form Handling
+   CLUB AAYURVEDA - Consultation Modal & Form Handling
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // WhatsApp formatted message
       const msg = encodeURIComponent(
-        `*New Consultation Request - Club Ayurveda*\n\n` +
+        `*New Consultation Request - Club Aayurveda*\n\n` +
         `• *Name:* ${name}\n` +
         `• *Phone:* ${phone}\n` +
         `• *Email:* ${email}\n` +
@@ -68,26 +68,28 @@ document.addEventListener('DOMContentLoaded', () => {
         `• *Consultation Mode:* ${mode}\n` +
         `• *Primary Concern:* ${concern}\n` +
         `• *Preferred Date:* ${date}\n\n` +
-        `_Request sent via Club Ayurveda website demo._`
+        `_Request sent via Club Aayurveda website._`
       );
 
       // Close modal if submitting from modal
       closeConsultationModal();
 
-      if (window.ClubAyurveda && window.ClubAyurveda.showToast) {
-        window.ClubAyurveda.showToast(`Thank you, ${name}. Redirecting to WhatsApp concierge...`);
+      const app = window.ClubAayurveda || window.ClubAyurveda;
+      if (app && app.showToast) {
+        app.showToast(`Thank you, ${name}. Redirecting to WhatsApp concierge...`);
       }
 
       // Open WhatsApp after brief feedback
       setTimeout(() => {
-        window.open(`https://wa.me/919876543210?text=${msg}`, '_blank');
+        window.open(`https://wa.me/919324635177?text=${msg}`, '_blank');
         form.reset();
       }, 700);
     });
   });
 
   // Expose
-  window.ClubAyurveda = window.ClubAyurveda || {};
-  window.ClubAyurveda.openConsultModal = openConsultationModal;
-  window.ClubAyurveda.closeConsultModal = closeConsultationModal;
+  window.ClubAayurveda = window.ClubAayurveda || {};
+  window.ClubAayurveda.openConsultModal = openConsultationModal;
+  window.ClubAayurveda.closeConsultModal = closeConsultationModal;
+  window.ClubAyurveda = window.ClubAayurveda;
 });

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   CLUB AYURVEDA - Pages Specific CSS
+   CLUB AAYURVEDA - Pages Specific CSS
    ========================================================================== */
 
 /* ==========================================================================
@@ -177,8 +177,9 @@
 
 .doc-portrait-frame img {
   width: 100%;
-  height: 480px;
+  height: 520px;
   object-fit: cover;
+  object-position: center 15%;
 }
 
 .doc-experience-badge {
@@ -398,6 +399,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 18%;
 }
 
 .treatment-content-box h2 {
@@ -460,7 +462,7 @@
   flex-direction: column;
   gap: 1.25rem;
   position: sticky;
-  top: 100px;
+  top: 170px;
 }
 
 .main-gallery-view {
@@ -902,6 +904,19 @@
   .journey-steps-grid {
     grid-template-columns: 1fr 1fr;
   }
+  
+  .doc-portrait-frame img {
+    height: 480px;
+    object-position: center 12%;
+  }
+  
+  .treatment-img-frame {
+    height: 400px;
+  }
+  
+  .treatment-img-frame img {
+    object-position: center 15%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -916,5 +931,18 @@
   }
   .action-row-main {
     flex-direction: column;
+  }
+  
+  .doc-portrait-frame img {
+    height: 380px;
+    object-position: center 10%;
+  }
+  
+  .treatment-img-frame {
+    height: 340px;
+  }
+  
+  .treatment-img-frame img {
+    object-position: center 12%;
   }
 }

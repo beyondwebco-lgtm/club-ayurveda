@@ -1,5 +1,5 @@
 /* ==========================================================================
-   CLUB AYURVEDA - Main UI, Interactions & Toast Controller
+   CLUB AAYURVEDA - Main UI, Interactions & Toast Controller
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -72,6 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, duration);
   }
 
-  window.ClubAyurveda = window.ClubAyurveda || {};
-  window.ClubAyurveda.showToast = showToast;
+  window.ClubAayurveda = window.ClubAayurveda || {};
+  window.ClubAayurveda.showToast = showToast;
+  window.ClubAyurveda = window.ClubAayurveda;
 });

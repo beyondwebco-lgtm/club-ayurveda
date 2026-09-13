@@ -1,7 +1,7 @@
 {
-  "name": "club-ayurveda",
+  "name": "club-aayurveda",
   "version": "1.0.0",
-  "description": "Club Ayurveda - Luxury Ayurvedic Wellness Client Demo Website",
+  "description": "Club Aayurveda - Personalised Ayurvedic Care & Luxury Wellness Website",
   "main": "index.html",
   "scripts": {
     "dev": "npx serve -l 3000 .",
@@ -9,12 +9,13 @@
     "serve": "npx serve ."
   },
   "keywords": [
+    "aayurveda",
     "ayurveda",
     "wellness",
     "shata-dhauta-ghrita",
     "skincare",
     "luxury-website"
   ],
-  "author": "Club Ayurveda",
+  "author": "Club Aayurveda",
   "license": "ISC"
 }
