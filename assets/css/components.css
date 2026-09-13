@@ -47,7 +47,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 160px;
+  height: 92px;
   gap: 1.5rem;
 }
 
@@ -62,9 +62,9 @@
 }
 
 .header-logo-img {
-  height: 150px;
+  height: 76px;
   width: auto;
-  max-width: 480px;
+  max-width: 230px;
   object-fit: contain;
   display: block;
   mix-blend-mode: multiply;
