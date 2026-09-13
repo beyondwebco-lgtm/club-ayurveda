@@ -5,22 +5,30 @@
 /* Top Announcement Bar */
 .top-bar {
   background-color: var(--color-bg-dark);
-  color: var(--color-gold-light);
+  color: #F7F3E8;
   font-size: 0.78rem;
   font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 0.45rem 1rem;
+  letter-spacing: 0.06em;
+  padding: 0.5rem 1rem;
   text-align: center;
-  border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+  border-bottom: 1px solid rgba(198, 161, 91, 0.25);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.25rem;
+}
+
+.top-bar span {
+  color: #F7F3E8;
+}
+
+.top-bar .desktop-only {
+  color: #D8B46D;
+  opacity: 0.7;
 }
 
 .top-bar a {
-  color: var(--color-gold-hover);
+  color: #D8B46D;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
