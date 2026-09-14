@@ -917,6 +917,13 @@
   margin-top: 3px;
 }
 
+.artisanal-purity-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
+}
+
 /* Responsive Overrides & Mobile Layout Adaptations */
 .doc-credentials-line {
   margin-top: 0.5rem;
@@ -936,7 +943,8 @@
   .treatment-row,
   .product-hero-grid,
   .about-hero-grid,
-  .contact-layout-grid {
+  .contact-layout-grid,
+  .artisanal-purity-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
@@ -1040,7 +1048,8 @@
   }
 
   .hero-ctas .btn,
-  .doc-cta-group .btn {
+  .doc-cta-group .btn,
+  .artisanal-purity-grid .btn {
     width: 100%;
     text-align: center;
     justify-content: center;
