@@ -14,15 +14,33 @@
     netQty: '30 g'
   };
 
-  // State
-  let cart = {
-    items: [
-      {
-        ...PRODUCT_DATA,
-        quantity: 1
+  const CART_STORAGE_KEY = 'club_aayurveda_cart';
+
+  function loadCart() {
+    try {
+      const stored = localStorage.getItem(CART_STORAGE_KEY);
+      if (stored) {
+        const parsed = JSON.parse(stored);
+        if (parsed && Array.isArray(parsed.items)) {
+          return parsed;
+        }
       }
-    ]
-  };
+    } catch (e) {
+      console.error('Error loading cart state:', e);
+    }
+    return { items: [] };
+  }
+
+  function saveCart() {
+    try {
+      localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
+    } catch (e) {
+      console.error('Error saving cart state:', e);
+    }
+  }
+
+  // State
+  let cart = loadCart();
 
   // DOM Elements
   const cartOverlay = document.getElementById('cartDrawerOverlay');
@@ -34,6 +52,7 @@
   const cartCheckoutBtn = document.getElementById('cartCheckoutBtn');
 
   function updateCartUI() {
+    saveCart();
     const totalCount = cart.items.reduce((sum, item) => sum + item.quantity, 0);
     const subtotal = cart.items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
