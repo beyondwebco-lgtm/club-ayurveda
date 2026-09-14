@@ -918,6 +918,17 @@
 }
 
 /* Responsive Overrides & Mobile Layout Adaptations */
+.doc-credentials-line {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-gold-dark);
+  font-weight: 500;
+  font-size: clamp(0.88rem, 2.2vw, 1.1rem);
+  line-height: 1.55;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
 @media (max-width: 992px) {
   .hero-grid,
   .doc-section-grid,
@@ -946,6 +957,13 @@
     height: 440px;
     width: 100%;
     object-position: center 12%;
+  }
+
+  .doc-experience-badge {
+    right: 0.75rem;
+    bottom: 0.75rem;
+    padding: 0.75rem 1.1rem;
+    max-width: calc(100% - 1.5rem);
   }
   
   .treatment-img-frame {
@@ -1049,8 +1067,22 @@
   }
 
   .doc-portrait-frame img {
-    height: 330px;
+    height: 320px;
     object-position: center 8%;
+  }
+
+  .doc-experience-badge {
+    right: 0.5rem;
+    bottom: 0.5rem;
+    padding: 0.5rem 0.85rem;
+  }
+
+  .doc-experience-badge .years {
+    font-size: 1.4rem;
+  }
+
+  .doc-experience-badge .label {
+    font-size: 0.65rem;
   }
 
   .treatment-img-frame {
